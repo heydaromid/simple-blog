@@ -1,0 +1,44 @@
+#blog-name {
+    height: 200px;
+    background-color: #e4e4e4;
+    cursor: default;
+}
+
+.tag {
+    top: 11%;
+    left: 8%;
+    padding: 4px 16px;
+    cursor: default;
+}
+
+.tag:hover {
+    opacity: 80%;
+}
+
+.underline-effect {
+    position: relative;
+    cursor: pointer;
+}
+
+.underline-effect::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: .4s;
+}
+
+.underline-effect:hover::before {
+    width: 100%;
+    transition: .4s;
+}
+
+.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
